@@ -9,5 +9,7 @@
 HTTP Clients:
 
 [whatwg-fetch](https://www.npmjs.com/package/whatwg-fetch)
+
 [Axios](https://github.com/axios/axios)
+
 [superagent](https://www.npmjs.com/package/superagent)

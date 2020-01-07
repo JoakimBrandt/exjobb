@@ -1,0 +1,21 @@
+Introduktion
+Utvärderingsprov inom hantering av HTTP-klienter i .net
+
+Problembeskrivning
+2009 skapades RestSharp och 2018 skapades Flurl. Båda är open source-bibliotek för att hämta och konsumera data via HTTP-protokollet. Det har dock gjorts väldigt lite dokumentation på hur bibliotekens kod påverkar deras prestanda, baserat utifrån dessa tre faktorer:
+
+Datamängd (hur stor mängd data som förfrågas från webbtjänsten
+Antalet anrop/begär (Hur många klienter som begär att få hämta data samtidigt från webbtjänsten)
+Fördröjningstid (Hur lång tid det tar att processera ett anrop på data, från början till slut)
+
+Syfte och problemfrågor
+Att evaluera två metoder för att konsumera data från webbtjänster i mån av prestanda (enligt ovanstående faktorer). Det här kommer bidra med en insikt för IT-företag när det kommer till valet om datahämtningsmetoder, utifrån företagens behov. Studera hur valet av teknologi för datahämtning påverkar prestandan i jämförelse med varandra. Då det inte redan existerar forskning som nämner varken Flurl eller RestSharp tidigare, är målet att förminska detta kunskapshål och bidra med trovärdiga insikter om prestandan för ramverken.
+
+Metod
+Göra en experimentell och kvalitativ analys av två stycken HTTP-klienter samt göra en utvärdering och analys av deras kodbaser. 
+
+Teorier
+Då Flurl har utvecklats på senare tid bör ett antagande om att den klienten är "bättre" på ett prestandamässigt perspektiv. Men även att Flurl bör vara enklare att använda  (kodmässigt) då det är en nyare klient, och är antagligen också därför den har utvecklats från början.
+
+Företagets mål
+Företag ska kunna på ett enklare sätt välja rätt HTTP-klient utifrån företagets mål och behov.
